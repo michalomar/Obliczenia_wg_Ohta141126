@@ -84,6 +84,9 @@ calculate_n(plik_I, plik_wyjsciowy, n_inf);
 plik_wyjsciowy_k = 'k_calculated.txt';
 calculate_k(plik_R, plik_wyjsciowy_k, n_inf);
 
+% --- Porownanie wynikow obliczonych z danymi pomiarowymi ---
+compare_results;
+
 fprintf('\n');
 fprintf('====================================\n');
 fprintf('Materia³: %s\n', material);

@@ -48,13 +48,4 @@ function calculate_n(plik_wejsciowy, plik_wyjsciowy,n_inf)
      %dlmwrite(plik_wyjsciowy, output_data, 'delimiter', ' ', '\t', 'precision', '%.6f');
     
      fprintf('Zapisano dane do pliku: %s\n', plik_wyjsciowy);
-    
-    % --- RYSOWANIE WYKRESU ---
-    figure;
-    plot(lambda, n, 'b-', 'LineWidth', 1.5);
-    grid on;
-    xlabel('D³ugoœæ fali \lambda [\mum]');
-    ylabel('Wspó³czynnik za³amania n');
-    title('Wykres n(\lambda)');
-    xlim([min(lambda), max(lambda)]);
 end

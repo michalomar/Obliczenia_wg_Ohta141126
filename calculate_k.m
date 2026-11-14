@@ -76,20 +76,4 @@ dlmwrite(plik_wyjsciowy, ...
 fprintf('Zapisano dane do pliku: %s\n', ...
     plik_wyjsciowy);
 
-% ============================================
-% Wykres
-% ============================================
-
-figure;
-plot(lambda, k, 'b-', 'LineWidth', 1.5);
-
-grid on;
-
-xlabel('Długość fali \lambda [\mum]');
-ylabel('Ekstynkcja k');
-
-title('Wykres k(\lambda)');
-
-xlim([min(lambda), max(lambda)]);
-
 end
